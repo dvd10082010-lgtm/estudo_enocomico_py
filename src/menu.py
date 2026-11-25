@@ -1,4 +1,4 @@
-from functions import saveasdict,show_dta
+from src.functions import saveasdict,show_dta
 
 def menu():
     lsrecord = []  

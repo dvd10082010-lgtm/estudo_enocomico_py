@@ -22,7 +22,7 @@ class registros:
             print("===========================")
             self.value = float(input("insira  o valor:\n"))
             print("===========================")
-            if type(self.value) == "float":
+            if isinstance(self.value, float) == True:
                 x = 0
                 return self.value
             else:
@@ -43,18 +43,19 @@ class registros:
             raise ValueError("\nerro!!, insira apenas o valores determinados")
 
     def insert_inadouts(self):
-        self.inadout = input("\no valor será uma entrada(digite 1) ou uma saída(digite 2) ?\n")
-        match self.inadout:
-            case "entrada":
-                return 1
-            case "saida" :
-                return 2
-            case _:
-                return ValueError("insira apenas ""entradas"" ou saídas")
-    
+        while True:
+            self.inadout = input("\no valor será uma entrada(digite 1) ou uma saída(digite 2) ?\n")
+            match self.inadout:
+                case "1":
+                    return "entrada"
+                case "2":
+                    return "saída"
+                case _:
+                    return ValueError("insira apenas 1 ou 2")
+            
     def record(self):
         self.insert_name()
         self.insert_typemv()
         self.insert_inadouts()
         self.insert_value()
-        return registros.__dict__
+        return self.__dict__.copy()
