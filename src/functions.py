@@ -45,8 +45,8 @@ def  saveasjson(arr = []):
 def calcular_saldo(arr = []):
     saldo = 0
     for item in arr:
-        if item['inadout'] == 1:
+        if item['inadout'] == "1":
             saldo += item['value']
-        else:
+        elif item['inadout'] == "2":
             saldo -= item['value']
     print(saldo)
