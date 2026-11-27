@@ -40,16 +40,18 @@ class registros:
             if self.type_mov  in types_trust:
                 return self.type_mov
             else:
-                print("\nerros!!, insira apenas o valores determinados")
+                print("erros!!, insira apenas o valores determinados")
 
     def insert_inadouts(self):
         while True:
-            self.inadout = input("\no valor será uma entrada(digite 1) ou uma saída(digite 2) ?\n")
-            match self.inadout:
+            opcao = input("\no valor será uma entrada(digite 1) ou uma saída(digite 2) ?\n")
+            match opcao:
                 case "1":
-                    return "entrada"
+                    self.inadout = "entrada" 
+                    return self.inadout
                 case "2":
-                    return "saída"
+                    self.inadout = "saída"
+                    return self.inadout
                 case _:
                     print("insira apenas 1 ou 2")
             

@@ -1,14 +1,26 @@
 [
-{
-    "name": "david",
-    "value": 102.0,
-    "type_mov": "débito",
-    "inadout": "2"
-},
-{
-    "name": "leticia",
-    "value": 102.0,
-    "type_mov": "débito",
-    "inadout": "1"
-}
+    {
+        "name": "W",
+        "value": 192.0,
+        "type_mov": "TED",
+        "inadout": "saída"
+    },
+    {
+        "name": "amon",
+        "value": 2392.0,
+        "type_mov": "TED",
+        "inadout": "entrada"
+    },
+    {
+        "name": "david",
+        "value": 2.0,
+        "type_mov": "TED",
+        "inadout": "entrada"
+    },
+    {
+        "name": "a",
+        "value": 82.0,
+        "type_mov": "TED",
+        "inadout": "entrada"
+    }
 ]
